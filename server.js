@@ -51,6 +51,13 @@ app.get('/maintenance', (request, response) => {
   });
 });
 
+
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {
+    pageTitle: 'Website in maintenance',
+  });
+});
+
 app.get('/about', (request, response) => {
   response.render('about.hbs', {
     pageTitle: 'About page',
@@ -64,5 +71,5 @@ app.get('/bad', (request, response) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is up on port ${port}`);
+  console.log(`Server is up on port ${pos}`);
 });
