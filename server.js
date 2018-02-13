@@ -54,7 +54,7 @@ app.get('/maintenance', (request, response) => {
 
 app.get('/projects', (request, response) => {
   response.render('projects.hbs', {
-    pageTitle: 'Website in maintenance',
+    pageTitle: 'Projects page',
   });
 });
 
